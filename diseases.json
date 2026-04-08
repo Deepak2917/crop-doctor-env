@@ -1,0 +1,86 @@
+{
+  "powdery_mildew": {
+    "crop": "wheat", "region": "Punjab",
+    "season": "rabi",
+    "symptoms": ["white_powder_on_leaves","yellowing","dry_leaves"],
+    "treatment": "sulfur_spray",
+    "severity": "medium", "confusable_with": "false_mildew"
+  },
+  "whitefly": {
+    "crop": "tomato", "region": "Andhra Pradesh",
+    "season": "kharif",
+    "symptoms": ["sticky_residue","curling_leaves","yellowing"],
+    "treatment": "neem_oil_spray",
+    "severity": "medium", "confusable_with": "aphid_attack"
+  },
+  "bacterial_blight": {
+    "crop": "rice", "region": "West Bengal",
+    "season": "kharif",
+    "symptoms": ["brown_water_spots","wilting","foul_smell"],
+    "treatment": "copper_oxychloride_spray",
+    "severity": "high", "confusable_with": "leaf_scald"
+  },
+  "nitrogen_deficiency": {
+    "crop": "maize", "region": "Maharashtra",
+    "season": "kharif",
+    "symptoms": ["pale_yellow_leaves","stunted_growth","thin_stalks"],
+    "treatment": "urea_fertilizer",
+    "severity": "low", "confusable_with": "sulfur_deficiency"
+  },
+  "stem_borer": {
+    "crop": "sugarcane", "region": "Uttar Pradesh",
+    "season": "annual",
+    "symptoms": ["holes_in_stem","dead_heart","frass"],
+    "treatment": "chlorpyrifos_spray",
+    "severity": "high", "confusable_with": "root_borer"
+  },
+  "false_mildew": {
+    "crop": "wheat", "region": "Haryana",
+    "season": "rabi",
+    "symptoms": ["yellowing","grey_powder","leaf_curl"],
+    "treatment": "mancozeb_spray",
+    "severity": "medium", "confusable_with": "powdery_mildew"
+  },
+  "aphid_attack": {
+    "crop": "tomato", "region": "Karnataka",
+    "season": "kharif",
+    "symptoms": ["sticky_residue","yellowing","distorted_growth"],
+    "treatment": "imidacloprid_spray",
+    "severity": "medium", "confusable_with": "whitefly"
+  },
+  "leaf_scald": {
+    "crop": "rice", "region": "Tamil Nadu",
+    "season": "kharif",
+    "symptoms": ["brown_water_spots","tan_lesions","leaf_tip_burn"],
+    "treatment": "propiconazole_spray",
+    "severity": "medium", "confusable_with": "bacterial_blight"
+  },
+  "sulfur_deficiency": {
+    "crop": "maize", "region": "Rajasthan",
+    "season": "kharif",
+    "symptoms": ["pale_yellow_leaves","purple_tint","slow_growth"],
+    "treatment": "gypsum_fertilizer",
+    "severity": "low", "confusable_with": "nitrogen_deficiency"
+  },
+  "root_borer": {
+    "crop": "sugarcane", "region": "Maharashtra",
+    "season": "annual",
+    "symptoms": ["wilting","hollow_stems","root_damage"],
+    "treatment": "carbofuran_granules",
+    "severity": "high", "confusable_with": "stem_borer"
+  },
+  "early_blight": {
+    "crop": "potato", "region": "Himachal Pradesh",
+    "season": "rabi",
+    "symptoms": ["dark_brown_spots","yellowing","concentric_rings"],
+    "treatment": "chlorothalonil_spray",
+    "severity": "medium", "confusable_with": "late_blight"
+  },
+  "late_blight": {
+    "crop": "potato", "region": "Uttar Pradesh",
+    "season": "rabi",
+    "symptoms": ["water_soaked_spots","white_mold","dark_lesions"],
+    "treatment": "metalaxyl_spray",
+    "severity": "high", "confusable_with": "early_blight"
+  }
+}

@@ -1,0 +1,56 @@
+name: crop_doctor_env
+version: "1.0"
+description: >
+  RL environment where an AI agent acts as an expert
+  agronomist diagnosing crop diseases on Indian farms.
+benchmark: crop_doctor
+tasks:
+  - name: easy
+    description: 2 symptoms shown, 5 steps max
+    max_steps: 5
+    success_threshold: 0.5
+  - name: medium
+    description: 1 symptom shown, must investigate, 7 steps
+    max_steps: 7
+    success_threshold: 0.5
+  - name: hard
+    description: Confusable disease pair, 10 steps, penalty
+    max_steps: 10
+    success_threshold: 0.5
+observation_space:
+  type: object
+  fields:
+    crop: string
+    region: string
+    season: string
+    visible_symptoms: list
+    questions_asked: list
+    steps_remaining: integer
+    budget_remaining: integer
+    difficulty: string
+action_space:
+  type: discrete
+  actions:
+    - ask_more_symptoms
+    - ask_soil_type
+    - ask_recent_rainfall
+    - prescribe_sulfur_spray
+    - prescribe_neem_oil_spray
+    - prescribe_copper_oxychloride_spray
+    - prescribe_urea_fertilizer
+    - prescribe_chlorpyrifos_spray
+    - prescribe_mancozeb_spray
+    - prescribe_imidacloprid_spray
+    - prescribe_propiconazole_spray
+    - prescribe_gypsum_fertilizer
+    - prescribe_carbofuran_granules
+    - prescribe_chlorothalonil_spray
+    - prescribe_metalaxyl_spray
+reward:
+  min: -0.2
+  max: 1.0
+  type: float
+env_vars:
+  - API_BASE_URL
+  - MODEL_NAME
+  - HF_TOKEN
